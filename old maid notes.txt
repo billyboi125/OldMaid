@@ -1,0 +1,31 @@
+Old maid game
+Rules
+-----------------------
+Has to be 2+ players
+deal out entire deck of cards // take on queen out
+each player has to put each pair of cards into a discard pile
+it goes clockwise guessing on a player card
+if you go out of cards you win
+last player with the queen loses
+
+-----------------------
+Structure
+-----------------------
+Need to find out how many players are playing
+needs to distrubute cards to each player until no more.
+//51 cards in deck with 3 queens
+Need each player to see their cards and than take all pairs out of their hands
+First player picks a card from the last player to start off then second player to the first player and so on and so forth
+If a player gets a pair from taking a card they are discarded, if not they keep the cards. needs to check every turn
+if a player has no more cards they are out and win
+last player with a card (which is a queen loses)
+
+-----------------------
+Classes
+-----------------------
+Player();
+Turn(); {
+	checkPlayerCards(); //checks players hand to see if pair or not. If pair it gets rid of them, if not it adds to hand
+	winCheck(); //checks to see if player has zero cards
+	loseGameCheck();//checks to see if player has one card with a queen.
+}
