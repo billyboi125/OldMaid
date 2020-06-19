@@ -23,9 +23,27 @@ last player with a card (which is a queen loses)
 -----------------------
 Classes
 -----------------------
-Player();
+Player(); {
+	addPlayer(); //adds player to the game. Each player is gonna be an vector
+	removePlayer(); //removes player from the game
+	removeCard(); //removes the cards
+	addCard(); //adds a card to players hand
+	randomizePlayersHand(); //after turn we randomize hand
+	pickCard(); //picks the card from a players hand
+}
 Turn(); {
 	checkPlayerCards(); //checks players hand to see if pair or not. If pair it gets rid of them, if not it adds to hand
 	winCheck(); //checks to see if player has zero cards
 	loseGameCheck();//checks to see if player has one card with a queen.
+	countCards(); //checks to see if player has 0 cards. if they do they are out and put into an array called playerWinOrder.
+}
+Deck() { 
+	dealDeck();//deals the cards to the players
+	//deck variable with 51 cards
+}
+
+Conversation() {
+	intro();
+	winDialogue();
+	loseDialogue();
 }
