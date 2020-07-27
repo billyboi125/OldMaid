@@ -26,8 +26,6 @@ Classes
 Player(); {
 	addPlayer(); //adds player to the game. Each player is gonna be an vector
 	removePlayer(); //removes player from the game
-	removeCard(); //removes the cards
-	addCard(); //adds a card to players hand
 	randomizePlayersHand(); //after turn we randomize hand
 	pickCard(); //picks the card from a players hand
 }
@@ -40,6 +38,8 @@ Turn(); {
 Deck() { 
 	dealDeck();//deals the cards to the players
 	//deck variable with 51 cards
+	removeCard(); //removes the cards
+	addCard(); //adds a card to players hand
 }
 
 Conversation() {
