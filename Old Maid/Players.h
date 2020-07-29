@@ -5,8 +5,11 @@ class Player() {
     public:
         Player();
 
+        //finds out the amount of players
+        amountOfPlayers(int numOfPlayers);
+
         //adds player to the game
-        addPlayer();
+        addPlayer(string playerName);
 
         //removes player from the game
         removePlayer();
@@ -16,6 +19,11 @@ class Player() {
 
         //picks the card from a player hand
         pickCard();
+
+
+    private:
+        string<vector> allPlayerNames;
+
 
 };
 

@@ -32,6 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Conversation.cpp" />
+		<Unit filename="Conversation.h" />
+		<Unit filename="Deck.h" />
+		<Unit filename="Player.cpp" />
 		<Unit filename="Players.h">
 			<Option target="Debug" />
 		</Unit>

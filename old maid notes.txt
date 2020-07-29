@@ -28,6 +28,8 @@ Player(); {
 	removePlayer(); //removes player from the game
 	randomizePlayersHand(); //after turn we randomize hand
 	pickCard(); //picks the card from a players hand
+
+//each player has a vector of their cards
 }
 Turn(); {
 	checkPlayerCards(); //checks players hand to see if pair or not. If pair it gets rid of them, if not it adds to hand
